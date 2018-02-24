@@ -7,7 +7,8 @@
         <link rel="stylesheet" type="text/css" href="/RZS/assets/header_style.css">
         <link rel="stylesheet" type="text/css" href="/RZS/assets/nav_style.css">
 
-        <script type="text/x-mathjax-config">
+        <!--
+<script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     TeX: {
       equationNumbers: {
@@ -24,6 +25,22 @@
 <script type="text/javascript"
         src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+-->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    extensions: ["tex2jax.js","toMathML.js"],
+    TeX: { extensions: ["color.js","AMSsymbols.js","AMSmath.js"] },
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {
+       inlineMath: [ ["\\(","\\)"] ],
+       displayMath: [ ["\\[","\\]"] ],
+       ignoreClass: "tex2jax_ignore|myignore"
+    },
+    displayAlign: "center"
+    });
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"> </script>
 
     </head>
 
@@ -91,7 +108,8 @@
 
             <div class="content">
                 <h2 id="test-matmy">Test matmy:</h2>
-<p><script type="math/tex">\int_0^\infty \frac{1}{x^2} dx</script></p>
+<p>Bla bla bla \(\int_0^\infty \frac{1}{x^2} dx\), a to była całka, a teraz będzie taki fajny ułamek:
+\[\frac{1}{\sin{x}}\]</p>
 
             </div>
         </div>
